@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>وبسایت شخصی حمیدرضا اسم خانی | توسعه دهنده وب</title>
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="/assets/CSS/Style.css">
+        <!-- Favicon links -->
+        <link rel="shortcut icon" href="/assets/Images/Navbar/icon.svg"
+            type="image/x-icon" width="500px">
+        <!-- Font-Load -->
+        <link rel="preload" href="/assets/Fonts/Vazir-Font/Vazir-Light.woff2"
+            as="font" type="font/woff2" crossorigin>
+        <!-- Hero -->
+        <link rel="preload" as="image" href="/assets/Images/Hero/Hero-bg.avif"
+            fetchpriority="high">
+        <link rel="preload" as="image"
+            href="/assets/Images/Hero/Hero-bg-Mobile.avif" fetchpriority="high">
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav id="navbar">
+            <div class="navbar-content">
+                <div class="nav-logo-icon"><img
+                        src="/assets/Images/Navbar/logo.svg" alt="Navbar-Logo"
+                        width="140px"
+                        fetchpriority="high"></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">خانه</a></li>
+                    <li><a href="#services">خدمات</a></li>
+                    <li><a href="#projects">پروژه ها</a></li>
+                    <li><a href="#about">درباره من</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" id="bars"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path fill="currentColor"
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </div>
+            <!-- hidden  -->
+            <div class="logo-nav">
+                <img src="/assets/images/Navbar/logo.svg" alt="navbar-logo"
+                    loading="lazy" />
+            </div>
+
+            <div class="mobile-list" dir="rtl">
+                <div class="logo-in-list">
+                    <img src="/assets/Images/Navbar/icon.svg" alt="logo"
+                        loading="lazy" />
+                    <svg xmlns="http://www.w3.org/2000/svg" id="xmark"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z" />
+                    </svg>
+                </div>
+                <div class="list-in">
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="home"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M240 6.1c9.1-8.2 22.9-8.2 32 0l232 208c9.9 8.8 10.7 24 1.8 33.9s-24 10.7-33.9 1.8l-8-7.2 0 205.3c0 35.3-28.7 64-64 64l-288 0c-35.3 0-64-28.7-64-64l0-205.3-8 7.2c-9.9 8.8-25 8-33.9-1.8s-8-25 1.8-33.9L240 6.1zm16 50.1L96 199.7 96 448c0 8.8 7.2 16 16 16l48 0 0-104c0-39.8 32.2-72 72-72l48 0c39.8 0 72 32.2 72 72l0 104 48 0c8.8 0 16-7.2 16-16l0-248.3-160-143.4zM208 464l96 0 0-104c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24l0 104z" />
+                            </svg> <a href="#hero">
+                                خانه
+                            </a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="user"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z" />
+                            </svg> <a href="#about">
+                                درباره من
+                            </a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                id="open-folder"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M97.5 400l50-160 379.4 0-50 160-379.4 0zm190.7 48L477 448c21 0 39.6-13.6 45.8-33.7l50-160c9.7-30.9-13.4-62.3-45.8-62.3l-379.4 0c-21 0-39.6 13.6-45.8 33.7L80.2 294.4 80.2 96c0-8.8 7.2-16 16-16l138.7 0c3.5 0 6.8 1.1 9.6 3.2L282.9 112c13.8 10.4 30.7 16 48 16l117.3 0c8.8 0 16 7.2 16 16l48 0c0-35.3-28.7-64-64-64L330.9 80c-6.9 0-13.7-2.2-19.2-6.4L273.3 44.8C262.2 36.5 248.8 32 234.9 32L96.2 32c-35.3 0-64 28.7-64 64l0 288c0 35.3 28.7 64 64 64l192 0z" />
+                            </svg> <a href="#projects">پروژه ها</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                id="laptop-code"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 240-64 0 0-240-384 0 0 240-64 0 0-240zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z" />
+                            </svg> <a href="#service">خدمات</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="phone"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z" />
+                            </svg> <a href="#">تماس با من</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- HERO -->
+        <section id="Hero" dir="rtl">
+            <div class="hero-overlay"></div>
+            <div class="hero-texts">
+                <h4>سلام من</h4>
+                <h1>حمیدرضا <span class="span-hero">اسم خانی</span></h1>
+                <h3>توسعه دهنده وب و طراح رابط کاربری</h3>
+                <p>من یک توسعه دهنده فول استک و طراح UI/UX هستم که با علاقه
+                    و<br>دقت , وب سایت ها و برنامه های مدرن و کاربر
+                    پسند میسازم .</p>
+                <button class="btn-hero btn-1"><a href>مشاهده نمونه کار
+                        ها</a></button><button class="btn-hero btn-2"><a
+                        href>درباره من بیشتر بدانید</a></button>
+            </div>
+            <div class="hero-card">
+                <div class="card-hero">
+                    <h1>+2</h1>
+                    <p>سال تجربه</p>
+                </div>
+                <div class="card-hero">
+                    <h1>+10</h1>
+                    <p>تکنولوژی</p>
+                </div>
+                <div class="card-hero">
+                    <h1>+100</h1>
+                    <p>سرعت لود بالا</p>
+                </div>
+                <div class="card-hero">
+                    <h1>+98</h1>
+                    <p>طراحی ریسپانسیو</p>
+                </div>
+            </div>
+        </section>
+        <!-- services -->
+        <section id="service">
+            <a href id="services" aria-label="services"></a>
+            <div class="title">
+                <h3>خدمات من</h3>
+            </div>
+            <div class="service-cards">
+                <div class="service-card"> <svg
+                        xmlns="http://www.w3.org/2000/svg" id="arrow-trend-up"
+                        viewBox="0 0 576 512"><!--!Font Awesome Pro v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-169.4 169.4c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z" />
+                    </svg>
+                    <h3>بهینه سازی و سئو</h3>
+                    <p>بهبود عملکرد سایت و افزایش رتبه در موتور های جستجو گر</p>
+                </div>
+                <div class="service-card"><svg
+                        xmlns="http://www.w3.org/2000/svg" id="code"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z" />
+                    </svg>
+                    <h3>توسعه وب</h3>
+                    <p>ساخت وب سایت های قدرتمند و مقیاس پذیر</p>
+                </div>
+                <div class="service-card"><svg
+                        xmlns="http://www.w3.org/2000/svg" id="window-maximize"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm24 64l336 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L88 176c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+                    </svg>
+                    <h3>طراحی رابط کاربری</h3>
+                    <p>طراحی رابط کاربری زیبا و تجربه کاربری کاربر
+                        پسند و مدرن</p>
+                </div>
+                <div class="service-card"><svg
+                        xmlns="http://www.w3.org/2000/svg" id="headset"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M48 224c0-97.2 78.8-176 176-176s176 78.8 176 176l0 44.8c-14.1-8.2-30.5-12.8-48-12.8l-16 0c-26.5 0-48 21.5-48 48l0 128c0 26.5 21.5 48 48 48l16 0c53 0 96-43 96-96l0-160C448 100.3 347.7 0 224 0S0 100.3 0 224L0 384c0 53 43 96 96 96l16 0c26.5 0 48-21.5 48-48l0-128c0-26.5-21.5-48-48-48l-16 0c-17.5 0-33.9 4.7-48 12.8L48 224zm0 128c0-26.5 21.5-48 48-48l16 0 0 128-16 0c-26.5 0-48-21.5-48-48l0-32zm352 0l0 32c0 26.5-21.5 48-48 48l-16 0 0-128 16 0c26.5 0 48 21.5 48 48z" />
+                    </svg>
+                    <h3>پشتیبانی و نگهداری</h3>
+                    <p>پشتیبانی فنی و بروز رسانی برای اطمینان از
+                        عملکرد و امنیت</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- About -->
+        <section id="About" dir="rtl">
+            <a href id="about" aria-label="about"></a>
+            <div class="title">
+                <h3>درباره من</h3>
+            </div>
+            <div class="about">
+                <div class="about-texts">
+                    <h3>من کی هستم ؟</h3>
+                    <p>من علاقه مند به طراحی و توسعه تجربه های دیجیتال <br>هستم.
+                        هدف من ساخت محصولاتی است که هم زیبا<br> و
+                        هم
+                        کاربردی
+                        باشند.</p>
+                    <a href>اطلاعات بیشتر درباره من</a><i></i>
+                </div>
+                <div class="about-card">
+                    <div class="cards-about" dir="rtl">
+                        <div class="about-cards" dir="ltr">
+                            <div class="i-in"><svg
+                                    xmlns="http://www.w3.org/2000/svg" id="user"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path fill="currentColor"
+                                        d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z" />
+                                </svg></div>
+                            <div class="text-card-abt">
+                                <p>نام کامل</p>
+                                <p>حمیدرضا اسم خانی</p>
+                            </div>
+                        </div>
+                        <div class="about-cards" dir="ltr">
+                            <div class="i-in"> <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="email"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path fill="currentColor"
+                                        d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                                </svg></div>
+                            <div class="text-card-abt">
+                                <p>ایمیل</p>
+                                <p>Hamidrza.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="about-cards" dir="ltr">
+                            <div class="i-in"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="location"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path fill="currentColor"
+                                        d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                </svg></div>
+                            <div class="text-card-abt">
+                                <p>موقعیت</p>
+                                <p>ایران , زنجان</p>
+                            </div>
+                        </div>
+                        <div class="about-cards" dir="ltr">
+                            <div class="i-in"> <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="clock"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path fill="currentColor"
+                                        d="M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg></div>
+                            <div class="text-card-abt">
+                                <p>دسترسی</p>
+                                <p>برای پروژه های فریلنسری</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/assets/Images/About/About.avif" alt="About"
+                        width="280px" height="280px" loading="lazy">
+                </div>
+            </div>
+            <div class="hero-card1">
+                <div class="card-hero1">
+                    <h1>+2</h1>
+                    <p>سال تجربه</p>
+                </div>
+                <div class="card-hero1">
+                    <h1>+10</h1>
+                    <p>تکنولوژی</p>
+                </div>
+                <div class="card-hero1">
+                    <h1>+100</h1>
+                    <p>سرعت لود بالا</p>
+                </div>
+                <div class="card-hero1">
+                    <h1>+98</h1>
+                    <p>طراحی ریسپانسیو</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Skills -->
+        <section id="skill">
+            <div class="title-siklls">
+                <div class="title">
+                    <h3>مهارت های من</h3>
+                </div>
+                <p>تکنولوژی های که با آنها کار می کنم </p>
+            </div>
+            <div class="card">
+                <div class="title1">
+                    <svg width="22" height="22" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    مهارت ها
+                </div>
+
+                <div class="stack-flex">
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/icons8-html-5-48.svg"
+                                alt="SVG" width="50px"
+                                loading="lazy">
+                        </div>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/icons8-css3-96.svg"
+                                alt="SVG" width="50px"
+                                loading="lazy">
+                        </div>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/javascript-svgrepo-com.svg"
+                                alt="SVG"
+                                loading="lazy" width="43px"></div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/react-svgrepo-com.svg"
+                                alt="SVG" width="43px"
+                                loading="lazy">
+                        </div>
+                        <span>React</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/next-dot-js-svgrepo-com.svg"
+                                alt="SVG"
+                                width="43px" loading="lazy"></div>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/node-js-svgrepo-com.svg"
+                                alt="SVG"
+                                width="43px" loading="lazy">
+                        </div>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/design-systems-svgrepo-com.svg"
+                                alt="SVG"
+                                loading="lazy" width="43px"></div>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box">
+                            <img
+                                src="/assets/images/Skills/website-program-svgrepo-com-1.svg"
+                                alt="SVG" width="43px">
+                        </div>
+                        <span>Responsiv</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/git-svgrepo-com.svg"
+                                alt="SVG" width="43px"
+                                loading="lazy">
+                        </div>
+                        <span>Git</span>
+                    </div>
+                    <div class="stack-item">
+                        <div class="icon-box"><img
+                                src="/assets/images/Skills/github-color-svgrepo-com.svg"
+                                alt="SVG"
+                                width="43px" loading="lazy"></div>
+                        <span>GitHub</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- projects -->
+        <section id="Projects">
+            <a href="#" id="projects"></a>
+            <div class="title-siklls">
+
+                <div class="title">
+                    <h3>نمونه کار ها</h3>
+                </div>
+                <p>پروژه هایی که اخیراً ساخته ام</p>
+            </div>
+            <div class="card-Projects" dir="rtl">
+                <div class="card-project"><img
+                        src="/assets/Images/Projects/Projects-pic.avif"
+                        alt="image" loading="lazy">
+                    <h4>وبسایت شخصی</h4>
+                    <p>وبسایت شخصی حمیدرضا اسم خانی</p><button><a href>مشاهده
+                            وبسایت</a></button>
+                </div>
+                <div class="card-project"><img
+                        src="/assets/Images/Projects/projeect-img.avif"
+                        alt="image" loading="lazy">
+                    <h4>پروژه در حال ساخت</h4>
+                    <p>وبسایت شخصی حمیدرضا اسم خانی</p><button><a href>مشاهده
+                            وبسایت</a></button>
+                </div>
+                <div class="card-project"><img
+                        src="/assets/Images/Projects/projeect-img.avif"
+                        alt="image" loading="lazy">
+                    <h4>پروژه در حال ساخت</h4>
+                    <p>وبسایت شخصی حمیدرضا اسم خانی</p><button><a href>مشاهده
+                            وبسایت</a></button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- contact -->
+        <section id="contact" dir="rtl">
+            <a href="#" id="contact"></a>
+            <div class="title">
+                <h3>تماس با من</h3>
+            </div>
+            <div class="cont-c">
+                <div class="txt-cont">
+                    <h2 class="p-i">راه های ارتباطی من</h2>
+                    <p class="p-i">در صورت تمایل به همکاری با راه های ارتباطی
+                        زیر تماس حاصل <br>فرمایید .</p>
+                    <div class="cont">
+                        <div class="contact"><svg
+                                xmlns="http://www.w3.org/2000/svg" id="phone"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z" />
+                            </svg>
+                            <div class="cont-txt">
+                                <p>تلفن</p>
+                                <p>09909460568</p>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="email"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                            </svg>
+                            <div class="cont-txt">
+                                <p>ایمیل</p>
+                                <p>Hamidrza.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                id="location"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                            </svg>
+                            <div class="cont-txt">
+                                <p>موقعیت</p>
+                                <p>زنجان , ایران</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="input-form">نام شما :</label>
+                    <input type="text" class="input-form"
+                        placeholder="نام خود را  وارد کنید">
+                    <br>
+                    <label for="input-form">شماره تلفن شما :</label><input
+                        type="tel" maxlength="11" pattern="[0-9]{11}"
+                        inputmode="numeric"
+                        oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)"
+                        dir="rtl"
+                        class="input-form"
+                        placeholder="شماره تلفن خود را وارد نمایید (09123456789)">
+                    <br>
+                    <label for="textarea">پیام شما :</label><textarea rows="5"
+                        placeholder="درباره پروژه خودش بنویسید ..."></textarea>
+                    <button>ارسال پیام</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- weblogs -->
+        <section id="weblogs">
+            <a href="#" id="weblog"></a>
+            <div class="title">
+                <h3>وبلاگ ها</h3>
+            </div>
+            <div class="card-Projects" dir="rtl">
+                <div class="card-project"><img
+                        src="/assets/Images/Weblogs/blog-1.webp" alt="image"
+                        loading="lazy">
+                    <h4>مزایای داشتن یک وبسایت</h4>
+                    <p class="blog-p">در دنیای دیجیتال ، داشتن یک وب‌سایت
+                        حرفه‌ای یکی از ...</p><button><a
+                            href="/blog-1.html">مشاهده وبلاگ</a></button>
+                </div>
+                <div class="card-project"><img
+                        src="/assets/Images/Weblogs/blog-2.webp" alt="image"
+                        loading="lazy">
+                    <h4>چرا هر کسب و کاری به وبسایت نیاز دارد ؟</h4>
+                    <p class="blog-p">امروزه بیشتر افراد قبل از خرید یا استفاده
+                        از خدمات ...</p><button><a href="/blog-2.html">مشاهده
+                            وبلاگ</a></button>
+                </div>
+                <div class="card-project"><img
+                        src="/assets/Images/Weblogs/blog-3.webp" alt="image"
+                        loading="lazy">
+                    <h4>چگونه وبسایت باعث افزایش فروش میشود؟</h4>
+                    <p class="blog-p">وب‌سایت حرفه‌ای فقط برای معرفی کسب‌وکار
+                        نیست ...</p><button><a href="/blog-3.html">مشاهده
+                            وبلاگ</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <section id="footer" dir="rtl">
+            <div class="footer">
+                <div class="right-sec">
+                    <img src="/assets/Images/Navbar/logo.svg"
+                        alt="logo">
+                    <h3>حمیدرضا اسم خانی</h3>
+                    <h4>توسعه دهنده وب و طراح رابط کاربری</h4>
+                    <h4>وبسایت شخصی و پورتفولیو</h4>
+                </div>
+                <div class="center-sec">
+                    <h4 style="color: var(--text);">دسترسی سریع</h4>
+                    <h4><a href="#home">خانه</a></h4>
+                    <h4><a href="#projects">پروژه ها</a></h4>
+                    <h4><a href="#contact">تماس با من</a></h4>
+                    <h4><a href="#weblog">وبلاگ</a></h4>
+                </div>
+                <div class="left-sec" dir="ltr">
+                    <h3>بامن در ارتباط باشد</h3>
+                    <a href="https://instagram.com/"> <img
+                            src="/assets/Images/Footer/instagram-svgrepo-com-2.svg"
+                            alt>
+                            instagram
+                    </a>
+                     <a href="https://github.com/"> <img   class="github"
+                            src="/assets/Images/Footer/github-svgrepo-com.svg"
+                            alt>
+                            Github
+                    </a>
+                    <a href="https://t.me/"> <img style="width: 30px;"
+                            src="/assets/Images/Footer/telegram-svgrepo-com-1.svg"
+                            alt>
+                            Telegram
+                    </a>
+                    <a href="https://facebook.com/"> <img style="width: 30px; margin-top: 7px;"
+                            src="/assets/Images/Footer/facebook-svgrepo-com.svg"
+                            alt>
+                            Facebook
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="btm-sec">
+                <h4>تمامی حقوق محفوظ است ©</h4>
+            </div>
+        </section>
+        <!-- JavaScript Links -->
+        <script src="/assets/JS/Scripts.js" defer></script>
+    </body>
+
+</html>
